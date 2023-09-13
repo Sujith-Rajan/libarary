@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: silver;
+
+}
+.container{
+    margin: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   
+
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+   
+}
+input{
+    width:120%;
+    height: 2rem;
+    outline: none;
+}
+form{
+    display: flex;
+   
+}
+.card{
+    display: flex;
+    text-align: center;
+}
+.added-detials{
+    width:150px;
+    height: 150px;
+}
