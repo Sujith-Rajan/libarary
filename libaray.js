@@ -19,7 +19,10 @@ function addBookToLibrary() {
  const title =bookInput.value
    const author =authorInput.value
     const pages=pagesInput.value
-   
+    const isDuplicate = myLibrary.some((book) => book.title === title);
+     if( isDuplicate){
+        alert("duplicate book ,please enter new book")
+     }else{
     if( title && author && pages){
    
      const newBook = new Book(title,author,pages)
@@ -27,6 +30,7 @@ function addBookToLibrary() {
      renderLibarary()
 }else{
     alert("Please fill the fields")
+}
 }
 }
 
