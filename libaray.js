@@ -4,7 +4,7 @@ const pagesInput=document.getElementById('pages')
 const checkboxInput=document.getElementById('checkbox')
 const submit=document.getElementById('submit')
 const card= document.getElementById('card')
-
+const dialog = document.getElementById('dialog')
 
 
 
@@ -34,7 +34,8 @@ function addBookToLibrary() {
      myLibrary.push(newBook)
      renderLibarary()
 }else{
-    alert("Please fill the fields")
+    // alert("Please fill the fields")
+    dialog.showModal()
 }
 }
 }
